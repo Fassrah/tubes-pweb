@@ -1,0 +1,706 @@
+@import url("https://fonts.cdnfonts.com/css/pilot-command");
+@import url('https://fonts.cdnfonts.com/css/noto-sans-nko-unjoined');
+@import url('https://fonts.cdnfonts.com/css/beyonders');
+@import url('https://fonts.cdnfonts.com/css/cosmic-vibrant');
+@import url('https://fonts.cdnfonts.com/css/br-sonoma');
+@import url('https://fonts.cdnfonts.com/css/encode-sans-sc');
+@import url('https://fonts.cdnfonts.com/css/hockes');
+@import url('https://fonts.cdnfonts.com/css/br-shape');
+
+.container {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+.logo {
+  background: linear-gradient(to right, #ffffff, #898a8a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  width: 130px;
+  margin-left: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logo .atas {
+  font-family: 'Pilot Command Spaced Italic', sans-serif;
+  letter-spacing: -2px;
+  display: block;
+  font-size: 33px;
+  font-style: italic;
+}
+
+.logo .bawah {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: -3px;
+  font-family: 'BR Sonoma', sans-serif;
+}
+
+.navbar {
+  background: #000000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  margin-right: 80px;
+  z-index: 999;
+}
+
+.nav-button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: 'BR Shape', sans-serif;
+  z-index: 999;
+}
+
+.nav-button.active {
+  font-weight: bold;
+  color: #d20303;
+}
+
+.footer {
+  background: linear-gradient(180deg,black , #070707,#1a1a1a);
+  padding: 50px 60px 20px;
+  margin-top: auto;
+  border-top: 1px solid #3b3b3b;
+  }
+  
+  .footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  }
+  
+  .footer-section {
+  margin-bottom: 30px;
+  }
+  
+  .footer-heading {
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  }
+  
+  .footer-links,
+  .social-links,
+  .contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  }
+  
+  .footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+  font-size: 15px;
+  transition: color 0.3s ease;
+  }
+  
+  .footer-link:hover {
+  color: #d20303;
+  }
+  
+  .footer-text {
+  color: #ffffff;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  }
+  
+  .footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #4d4d4d;
+  }
+  
+  .copyright {
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  }
+
+
+ /* Beranda */
+.main-content {
+  background: #000000;
+  padding-left: 60px;
+  padding-top: 40px;
+  justify-content: space-between;
+}
+
+.product-info {
+  font-size: 25px;
+  padding-top: 30px;
+  border-radius: 8px;
+  font-family: 'Beyonders', sans-serif;
+}
+
+.product-info h1 {
+  background: linear-gradient(120deg, #ffffff, #4abdfb, #4abdfb, #4abdfb, #4abdfb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.product-info p {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 1.8;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+}
+
+.price-container {
+  gap: 3px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  width: 160px;
+  height: 25px;
+  padding: 10px;
+  background: linear-gradient(270deg, #4abdfb, #ad5adc, #e68caf);
+  color: #000000;
+  font-size: 30px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-family: 'HOCKES', sans-serif;
+}
+
+.add-to-cart {
+  font-family: 'Beyonders', sans-serif;
+  font-size: 10px;
+  width: 100px;
+  height: 45px;
+  background: #4abdfb;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: rgb(72, 72, 72); 
+}
+
+.product-details {
+  color: #ffffff;
+  font-family: 'BR Shape', sans-serif;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 180px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  filter: drop-shadow(0 0 70px #0F4C81);
+  animation: floating 4s ease-in-out infinite;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: -700px;
+  margin-bottom: 50px;
+}
+
+.product-image img {
+  margin-top: -50px;
+  width: 650px;
+  height: auto;
+  z-index: 900;
+}
+
+.circle-1 {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: linear-gradient(90deg, #4abdfb, #a738e7);
+  border-radius: 50%;
+  margin-right: 140px;
+  margin-top: 15px;
+}
+
+.circle-2 {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  background-color: transparent;
+  border: 2px solid #0F4C81;
+  border-radius: 50%;
+  margin-right: 75px;
+  margin-top: -50px;
+}
+
+.circle-3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #a738e7;
+  border-radius: 50%;
+  margin-right: 55px;
+  margin-top: 200px;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 60px solid #4abdfb;
+  margin-right: 609px;
+  margin-top: 80px;
+}
+
+.x-shape {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  color: #4abdfb;
+  font-size: 60px;
+  font-family: 'Pilot Command', sans-serif;
+  border-radius: 50%;
+  margin-right: 542px;
+  margin-top: 435px;
+}
+
+
+/* Produk */
+.page {
+  background-color: rgb(0, 0, 0);
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+
+.page h2 {
+  color: #ffffff;
+  font-size: 20px;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+}
+
+.product-grid {
+  display: grid;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.product-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+}
+
+.btn {
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+  background-color: #a90000;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #760000;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 3rem;
+  padding: 1rem 0;
+}
+
+.pagination-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid hwb(0 100% 0% / 0.51);
+  border-radius: 6px;
+  background-color: rgb(0, 0, 0);
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+}
+
+.pagination-btn:hover {
+  background-color: #ffffff83;
+  color: white;
+  border-color: black
+}
+
+.pagination-btn.active {
+  background-color: rgba(255, 255, 255, 0.504);
+  color: white;
+  border-color: black;
+}
+
+
+/*  Keranjang  */
+.page-cart {
+  background-color: #000000;
+  font-size: 13px;
+  min-height: 100vh;
+  padding: 2rem;
+  color: #000;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+}
+
+.page-cart h2 {
+  color: rgb(255, 255, 255);
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.keranjang-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.keranjang-items {
+  flex: 2;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 1.5rem;
+}
+
+.quantity-btn {
+  width: 32px;
+  height: 32px;
+  color: #ffffff;
+  border: 1px solid hsla(0, 0%, 100%, 0.507);
+  background-color: #000000;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.quantity-btn:hover {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.527);
+  border: none;
+}
+
+.quantity-number {
+  min-width: 30px;
+  text-align: center;
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+}
+
+.order-summary {
+  color: rgba(255, 255, 255, 0.674);
+  flex: 1;
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 12px;
+  height: fit-content;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.page-cart h2, h3 {
+  margin-bottom: 1rem;
+}
+
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cart-item {
+  color: hsla(0, 0%, 100%, 0.725);
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.cart-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: hsla(0, 0%, 100%, 0.908);
+}
+
+.product-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.name-wrapper {
+  flex: 1;
+}
+
+.name-wrapper h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.cart-info-container {
+  flex-grow: 1;
+}
+
+.remove-link {
+  color: #ffffffcb;
+  font-size: 0.9rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.2s;
+  margin-top: 2rem; 
+  display: block; 
+}
+
+.remove-link:hover {
+  color: #a90000;
+}
+
+.cart-price {
+  font-weight: bold;
+  font-size: 1.1rem;
+  white-space: nowrap;
+  margin-left: auto;
+  min-width: 150px;
+  text-align: right;
+}
+
+.summary-content {
+  color: rgba(255, 255, 255, 0.795);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.summary-content p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.summary-divider {
+  border: 0;
+  border-top: 1px solid #e0e0e0;
+  margin: 1.5rem 0;
+}
+
+.btn-cart {
+  background-color: #a90000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-cart:hover {
+  background-color: #760000;
+}
+
+
+/* Tentang */
+.page-about {
+  font-family: 'Noto Sans NKo Unjoined', sans-serif;
+  padding: 40px;
+  background-color: #000000;
+  min-height: 80vh;
+}
+
+.page-about h2 {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  transition: transform 0.4s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+.about-text {
+  text-align: justify;
+  max-width: 600px;
+}
+
+.about-text h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffffffd8;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #ffffffd8;
+  line-height: 1.8;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .about-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+} 
+
+
+/* Kontak */
+.contact-container {
+  display: flex;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  flex: 1;
+  padding-right: 2rem;
+}
+
+.contact-details p {
+  margin: 1.5rem 0;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.contact-form {
+  color: black;
+  flex: 1;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  padding: 0.5rem;
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+.form-input {
+  background-color: #e1e1e1;
+  padding: 0.8rem;
+  border: 1px solid #414141;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #888;
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-contact {
+  width: 140px;
+  align-self: flex-start;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background-color: #cf0000;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}

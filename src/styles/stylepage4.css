@@ -1,0 +1,246 @@
+.container {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom, #1a1a2e, #16213e);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.logo {
+  text-align: center;
+  margin: 30px 60px;
+  color: #e94560;
+  text-shadow: 0 0 10px #e94560, 0 0 20px #e94560;
+}
+
+.logo .atas {
+  font-family: 'Pilot Command Spaced Italic', sans-serif;
+  letter-spacing: -1px;
+  font-size: 36px;
+  font-style: italic;
+}
+
+.logo .bawah {
+  font-family: 'BR Sonoma', sans-serif;
+  font-size: 14px;
+  margin-top: -3px;
+  opacity: 0.8;
+}
+
+.navbar {
+  background: #0f0c29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(233, 69, 96, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-right: 80px;
+}
+
+.nav-button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  color: #d3d3f3;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  font-weight: bold;
+  color: #e94560;
+  text-shadow: 0 0 10px #e94560;
+}
+
+.footer {
+  background: #1a1a2e;
+  padding: 50px 60px 20px;
+  margin-top: auto;
+  border-top: 1px solid #3a3a5c;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  font-size: 18px;
+  color: #f5f5f5;
+}
+
+.footer-link,
+.footer-text {
+  color: #bbb;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #e94560;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #3a3a5c;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #777;
+}
+
+/* Beranda */
+.main-content {
+  background: linear-gradient(180deg, #0f0c29, #302b63, #24243e);
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.product-info {
+  color: #e94560;
+  text-shadow: 0 0 10px #e94560;
+  font-size: 26px;
+  font-family: 'Beyonders', sans-serif;
+  margin-bottom: 30px;
+}
+
+.product-info p {
+  color: #ccc;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 190px;
+}
+
+.price {
+  background: #00c9ff;
+  background: linear-gradient(to right, #92fe9d, #00c9ff);
+  color: #0f0c29;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00c9ff, 0 0 30px #92fe9d;
+}
+
+.add-to-cart {
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  color: #fff;
+  border: none;
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(238, 9, 121, 0.5);
+}
+
+.add-to-cart:hover {
+  background: linear-gradient(to right, #ee0979, #ff6a00);
+  box-shadow: 0 6px 20px rgba(238, 9, 121, 0.7);
+}
+
+.product-details {
+  color: #bbb;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: -600px;
+  margin-bottom: 50px;
+}
+
+.product-image img {
+  filter: drop-shadow(0 0 20px #e94560);
+  animation: floating 4s ease-in-out infinite;
+  width: 650px;
+  height: auto;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.triangle,
+.x-shape {
+  position: absolute;
+}
+
+.circle-1 {
+  width: 450px;
+  height: 450px;
+  background: rgba(233, 69, 96, 0.1);
+  border-radius: 50%;
+  margin-right: 140px;
+  margin-top: 15px;
+}
+
+.circle-2 {
+  width: 580px;
+  height: 580px;
+  border: 2px solid #e94560;
+  background: transparent;
+  border-radius: 50%;
+  margin-right: 75px;
+  margin-top: -50px;
+}
+
+.circle-3 {
+  width: 40px;
+  height: 40px;
+  background: #e94560;
+  border-radius: 50%;
+  margin-right: 55px;
+  margin-top: 200px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 60px solid #e94560;
+  margin-right: 609px;
+  margin-top: 80px;
+}
+
+.x-shape {
+  width: 30px;
+  height: 30px;
+  color: #e94560;
+  font-size: 60px;
+  margin-right: 542px;
+  margin-top: 435px;
+}

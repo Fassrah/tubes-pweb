@@ -1,0 +1,240 @@
+.container {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.logo {
+  text-align: center;
+  margin: 30px 60px;
+  color: #1abc9c;
+  text-shadow: 0 0 8px rgba(26, 188, 156, 0.5);
+}
+
+.logo .atas {
+  font-family: 'Pilot Command Spaced Italic', sans-serif;
+  letter-spacing: -1px;
+  font-size: 34px;
+  font-style: italic;
+}
+
+.logo .bawah {
+  font-family: 'BR Sonoma', sans-serif;
+  font-size: 14px;
+  margin-top: -3px;
+  opacity: 0.7;
+}
+
+.navbar {
+  background: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  margin-right: 80px;
+}
+
+.nav-button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 17px;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s, border-bottom 0.3s;
+  padding-bottom: 5px;
+}
+
+.nav-button:hover,
+.nav-button.active {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+}
+
+.footer {
+  background: #ffffff;
+  padding: 50px 60px 20px;
+  margin-top: auto;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  font-size: 18px;
+  color: #333;
+}
+
+.footer-link,
+.footer-text {
+  color: #666;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.footer-link:hover {
+  color: #1abc9c;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #999;
+}
+
+/* Beranda */
+.main-content {
+  background: #f0f8ff;
+  padding-left: 60px;
+  padding-top: 40px;
+}
+
+.product-info {
+  color: #3498db;
+  font-size: 26px;
+  margin-bottom: 30px;
+  font-family: 'Beyonders', sans-serif;
+}
+
+.product-info p {
+  color: #555;
+  font-size: 15px;
+  text-align: justify;
+  line-height: 1.8;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 190px;
+}
+
+.price {
+  background: linear-gradient(135deg, #1abc9c, #3498db);
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(26, 188, 156, 0.5);
+}
+
+.add-to-cart {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  margin-left: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 15px rgba(52, 152, 219, 0.5);
+}
+
+.add-to-cart:hover {
+  background: #1abc9c;
+  box-shadow: 0 6px 20px rgba(26, 188, 156, 0.7);
+}
+
+.product-details {
+  color: #555;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+  gap: 180px;
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 70px;
+  margin-top: -600px;
+  margin-bottom: 50px;
+}
+
+.product-image img {
+  filter: drop-shadow(0 0 15px rgba(52, 152, 219, 0.5));
+  animation: floating 4s ease-in-out infinite;
+  width: 650px;
+  height: auto;
+}
+
+.circle-1 {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: rgba(26, 188, 156, 0.1);
+  border-radius: 50%;
+  margin-right: 140px;
+  margin-top: 15px;
+}
+
+.circle-2 {
+  position: absolute;
+  width: 580px;
+  height: 580px;
+  border: 2px solid #3498db;
+  background: transparent;
+  border-radius: 50%;
+  margin-right: 75px;
+  margin-top: -50px;
+}
+
+.circle-3 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #1abc9c;
+  border-radius: 50%;
+  margin-right: 55px;
+  margin-top: 200px;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 35px solid transparent;
+  border-bottom: 35px solid transparent;
+  border-right: 60px solid #3498db;
+  margin-right: 609px;
+  margin-top: 80px;
+}
+
+.x-shape {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  color: #1abc9c;
+  font-size: 60px;
+  margin-right: 542px;
+  margin-top: 435px;
+}
